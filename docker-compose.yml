@@ -27,8 +27,6 @@ services:
     volumes:
       - ./frontend:/app
     command: sh -c "cd runapp_frontend && yarn start"
-    environment:
-      CHOKIDAR_USEPOLLING: "true"
     ports:
       - "3000:3000"
     depends_on:
