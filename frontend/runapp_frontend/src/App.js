@@ -1,8 +1,18 @@
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Calc from "./pages/user/Calc";
+import Equivalent from "./pages/user/Equivalent";
+import Training from "./pages/user/Training";
+
 function App() {
     return (
-        <div className="text-center py-4" >
-            <h1 className="text-xl font-bold">Hello, Tailwind!</h1>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/Calc" element={<Calc/>} />
+                <Route path="/Equivalent" element={<Equivalent/>} />
+                <Route path="/Training" element={<Training/>} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
