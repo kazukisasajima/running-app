@@ -1,8 +1,12 @@
 import React from 'react'
+import UserHeader from '../../components/Header/UserHeader'
 
 const Equivalent = () => {
   return (
-    <div>Equivalent</div>
+    <div>
+        <UserHeader pageTitle="同等" />
+        
+    </div>
   )
 }
 

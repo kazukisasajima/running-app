@@ -1,8 +1,12 @@
 import React from 'react'
+import UserHeader from '../../components/Header/UserHeader'
 
 const Calc = () => {
   return (
-    <div>Calc</div>
+    <div>
+        <UserHeader pageTitle="計算式" />
+        
+    </div>
   )
 }
 
